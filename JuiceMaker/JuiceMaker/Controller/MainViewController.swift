@@ -23,32 +23,15 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(updateStockCount(_:)),
-                                               name: .changedStockCount,
-                                               object: nil)
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(madeJuiceAlert(_:)),
-                                               name: .madeJuiceAlert,
-                                               object: nil)
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(failedAlert(_:)),
-                                               name: .failedAlert,
-                                               object: nil)
-        
-        NotificationCenter.default.post(name: .changedStockCount,
-                                        object: nil,
-                                        userInfo: nil)
+        updateStockCount(())
+        settingObserver()
     }
     
     @IBAction private func tappedModifyBarButton(_ sender: UIBarButtonItem) {
         guard let navigationController = self.storyboard?.instantiateViewController(withIdentifier: "EditNavigationController") as? UINavigationController else { return }
-        guard let viewController = navigationController.viewControllers.first as? EditViewController else { return }
         navigationController.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
         
-        viewController.stock = store.stock
+        StockStorage.shared.stock = store.stock
         
         present(navigationController, animated: true)
     }
@@ -89,11 +72,26 @@ class MainViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    @objc private func updateStockCount(_ noti: Notification) {
+    @objc private func updateStockCount(_ noti: Any) {
         strawberryCountLabel.text = String(store.stock[Fruit.strawberry.index])
         bananaCountLabel.text = String(store.stock[Fruit.banana.index])
         pineappleCountLabel.text = String(store.stock[Fruit.pineapple.index])
         kiwiCountLabel.text = String(store.stock[Fruit.kiwi.index])
         mangoCountLabel.text = String(store.stock[Fruit.mango.index])
+    }
+    
+    private func settingObserver() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(updateStockCount(_:)),
+                                               name: .changedStockCount,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(madeJuiceAlert(_:)),
+                                               name: .madeJuiceAlert,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(failedAlert(_:)),
+                                               name: .failedAlert,
+                                               object: nil)
     }
 }
