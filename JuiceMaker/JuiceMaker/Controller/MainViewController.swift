@@ -5,10 +5,15 @@
 
 import UIKit
 
+protocol SendDataDelegate: AnyObject {
+    func sendStock(_ stock: [Int])
+}
+
 class MainViewController: UIViewController {
     @objc let store = FruitStore(stockCount: 10)
     private lazy var juiceMaker = JuiceMaker(store: store)
     
+    weak var delegate: SendDataDelegate?
     private var stockChangeObserver: NSKeyValueObservation?
     
     @IBOutlet weak var strawberryBananaOrder: UIButton!
@@ -35,7 +40,7 @@ class MainViewController: UIViewController {
         navigationController.modalTransitionStyle = UIModalTransitionStyle.coverVertical
         navigationController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         
-        StockStorage.shared.stock = store.stock
+        delegate?.sendStock(store.stock)
         
         present(navigationController, animated: true)
     }

@@ -5,16 +5,21 @@
 
 import UIKit
 
+extension EditViewController: SendDataDelegate {
+    func sendStock(_ stock: [Int]) {
+        updateStockCount(stock: stock)
+    }
+}
+
 class EditViewController: UIViewController {
     
     @IBOutlet var fruitCountLabelArray: [UILabel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let storageStock = StockStorage.shared.stock else { return }
+        guard let mainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else { return }
         
-        updateStockCount(stock: storageStock)
-        StockStorage.shared.stock = nil
+        mainViewController.delegate = self
     }
     
     @IBAction private func tappedApplyButton(_ sender: UIButton) {
