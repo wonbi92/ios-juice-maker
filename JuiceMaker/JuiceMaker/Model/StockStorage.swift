@@ -1,8 +1,6 @@
 //
-//  StockStorage.swift
-//  JuiceMaker
-//
-//  Created by Wonbi on 2022/09/09.
+//  JuiceMaker - StockStorage.swift
+//  Created by Wonbi, woong
 //
 
 import Foundation
