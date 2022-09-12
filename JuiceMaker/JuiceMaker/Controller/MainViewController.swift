@@ -39,7 +39,9 @@ class MainViewController: UIViewController {
         guard let navigationController = self.storyboard?.instantiateViewController(withIdentifier: "EditNavigationController") as? UINavigationController else { return }
         navigationController.modalTransitionStyle = UIModalTransitionStyle.coverVertical
         navigationController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        guard let vc = navigationController.viewControllers.first as? EditViewController else { return }
         
+        delegate = vc
         delegate?.sendStock(store.stock)
         
         present(navigationController, animated: true)

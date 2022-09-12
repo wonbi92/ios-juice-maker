@@ -7,7 +7,7 @@ import UIKit
 
 extension EditViewController: SendDataDelegate {
     func sendStock(_ stock: [Int]) {
-        updateStockCount(stock: stock)
+        self.stock = stock
     }
 }
 
@@ -15,11 +15,11 @@ class EditViewController: UIViewController {
     
     @IBOutlet var fruitCountLabelArray: [UILabel]!
     
+    var stock = [Int]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let mainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else { return }
-        
-        mainViewController.delegate = self
+        updateStockCount(stock: stock)
     }
     
     @IBAction private func tappedApplyButton(_ sender: UIButton) {
