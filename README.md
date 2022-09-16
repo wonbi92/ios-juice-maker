@@ -29,7 +29,6 @@
  |![](https://i.imgur.com/YQFHlMg.gif)|![](https://i.imgur.com/KQxT7zK.gif)|
  |**재고수정 이동(alert을 통한 이동)**|**재고수정 이동(button을 통한 이동)**|
  |![](https://i.imgur.com/UedTJUE.gif)|![](https://i.imgur.com/exjbEaf.gif)
-|
  |**재고수정 적용(적용버튼)**|**재고수정 취소(취소버튼)**|
  |![](https://i.imgur.com/CVodTQk.gif)|![](https://i.imgur.com/QfJUT8E.gif)|
  
