@@ -38,8 +38,8 @@
 ### 🧬 Class Diagram
 <img src="https://i.imgur.com/DOguFss.jpg" width="800"/>
 
-### 🧬 Sequence Diagram
-<img src="https://i.imgur.com/VUnKqaj.png" width="800"/>
+### 🧬 Flow Chart
+<img src="https://i.imgur.com/WyO9bG8.png" width="800"/>
 
 
 ## 🗂 폴더 구조
