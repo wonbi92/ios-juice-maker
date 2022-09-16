@@ -223,13 +223,13 @@ JuiceMaker
 
 ## 🏃🏻 기술적 도전
 
-[싱글톤](https://github.com/wonbi92/ios-juice-maker/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-&-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%8F%84%EC%A0%84#%EF%B8%8F-%EC%8B%B1%EA%B8%80%ED%86%A4-%ED%8C%A8%ED%84%B4)
+[싱글톤 패턴](https://github.com/wonbi92/ios-juice-maker/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-&-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%8F%84%EC%A0%84#%EF%B8%8F-%EC%8B%B1%EA%B8%80%ED%86%A4-%ED%8C%A8%ED%84%B4)
 
 [NotificationCenter](https://github.com/wonbi92/ios-juice-maker/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-&-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%8F%84%EC%A0%84#%EF%B8%8F-notificationcenter)
 
-[KVO패턴](https://github.com/wonbi92/ios-juice-maker/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-&-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%8F%84%EC%A0%84#%EF%B8%8F-kvo-%ED%8C%A8%ED%84%B4)
+[KVO 패턴](https://github.com/wonbi92/ios-juice-maker/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-&-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%8F%84%EC%A0%84#%EF%B8%8F-kvo-%ED%8C%A8%ED%84%B4)
 
-[Delegate패턴](https://github.com/wonbi92/ios-juice-maker/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-&-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%8F%84%EC%A0%84#%EF%B8%8F-delegate-%ED%8C%A8%ED%84%B4)
+[Delegate 패턴](https://github.com/wonbi92/ios-juice-maker/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-&-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%8F%84%EC%A0%84#%EF%B8%8F-delegate-%ED%8C%A8%ED%84%B4)
 
 
 ## 🚀 트러블 슈팅
