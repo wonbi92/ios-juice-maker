@@ -46,7 +46,24 @@
 > Modal : 앱 구동 로직에 필요한 모델 <br>
 > View : 화면을 구성하는 뷰 <br>
 > Controller : 화면의 이벤트와 전환을 컨트롤하는 컨트롤러
-<img src="https://i.imgur.com/MC0mnDp.png" width="250"/>
+
+```
+JuiceMaker
+├── Modal
+│   ├── AlertMassage
+│   ├── JuiceMaker
+│   ├── FruitStore
+│   └── Fruit
+├── View
+│   ├── Main
+│   ├── Assets
+│   └── LaunchScreen
+└── Controller
+    ├── AppDelegate
+    ├── SceneDelegate
+    ├── MainViewController
+    └── EditViewController
+```
 
 
 ## ⏰ 타임라인
