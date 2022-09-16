@@ -36,32 +36,17 @@
 ## 👀 Diagram
 
 ### 🧬 Class Diagram
-![JuiceMaker ClassDiagram](https://i.imgur.com/DOguFss.jpg)
+<img src="https://i.imgur.com/DOguFss.jpg" width="800"/>
 
 ### 🧬 Sequence Diagram
-![JuiceMaker SequenceDiagram](https://i.imgur.com/VUnKqaj.png)
+<img src="https://i.imgur.com/VUnKqaj.png" width="800"/>
 
 
 ## 🗂 폴더 구조
-> Modal : 앱 구동 로직에 필요한 모델
-> View : 화면을 구성하는 뷰
+> Modal : 앱 구동 로직에 필요한 모델 <br>
+> View : 화면을 구성하는 뷰 <br>
 > Controller : 화면의 이벤트와 전환을 컨트롤하는 컨트롤러
-
-JuiceMaker<br>
-├── Modal<br>
-│   ├── AlertMassage<br>
-│   ├── JuiceMaker<br>
-│   ├── FruitStore<br>
-│   └── Fruit<br>
-├── View<br>
-│   ├── Main<br>
-│   ├── Assets<br>
-│   └── LaunchScreen<br>
-└── Controller<br>
-    ├── AppDelegate<br>
-    ├── SceneDelegate<br>
-    ├── MainViewController<br>
-    └── EditViewController
+<img src="https://i.imgur.com/MC0mnDp.png" width="250"/>
 
 
 ## ⏰ 타임라인
