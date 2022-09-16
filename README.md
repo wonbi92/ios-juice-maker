@@ -47,20 +47,20 @@
 > View : 화면을 구성하는 뷰
 > Controller : 화면의 이벤트와 전환을 컨트롤하는 컨트롤러
 
-*JuiceMaker*
-├── Modal
-│   ├── AlertMassage
-│   ├── JuiceMaker
-│   ├── FruitStore
-│   └── Fruit
-├── View
-│   ├── Main
-│   ├── Assets
-│   └── LaunchScreen
-└── Controller
-    ├── AppDelegate
-    ├── SceneDelegate
-    ├── MainViewController
+JuiceMaker<br>
+├── Modal<br>
+│   ├── AlertMassage<br>
+│   ├── JuiceMaker<br>
+│   ├── FruitStore<br>
+│   └── Fruit<br>
+├── View<br>
+│   ├── Main<br>
+│   ├── Assets<br>
+│   └── LaunchScreen<br>
+└── Controller<br>
+    ├── AppDelegate<br>
+    ├── SceneDelegate<br>
+    ├── MainViewController<br>
     └── EditViewController
 
 
